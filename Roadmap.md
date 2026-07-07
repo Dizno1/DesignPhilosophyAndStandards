@@ -137,3 +137,9 @@ Future work:
 - Add reusable data model examples for lesson content and question banks.
 - Add testing checklists for Academy and Lab releases.
 
+
+## Phase 3G - Academy Application Pattern
+
+Status: Complete
+
+Added the Academy as the first full application pattern. This phase preserves the course architecture, lesson structure, review lesson structure, lesson navigation, progress reporting, library topic behavior, domain card behavior, accessibility requirements, design rationale, and starter templates for future Academy-style courses.

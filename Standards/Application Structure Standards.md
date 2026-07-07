@@ -53,3 +53,12 @@ This applies especially to:
 - Future Open Door Design tools.
 
 Preserving structure prevents accidental regressions and allows future projects to inherit proven decisions.
+
+
+## Application Patterns
+
+Application Patterns is the location for full product architectures. Use it when documenting how an entire application type should be structured.
+
+Examples include Academy applications, assessment labs, audio tools, website systems, and future Open Door Design products.
+
+Application patterns should preserve both implementation guidance and design reasoning. A future project should be able to reuse the pattern without rediscovering the original decisions.

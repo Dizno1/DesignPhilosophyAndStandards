@@ -94,3 +94,7 @@ Current preserved structures:
 
 These patterns help future Open Door Design projects inherit proven navigation, heading, progress, feedback, reflow, keyboard, and screen reader behavior.
 
+
+## Recent update
+
+Added Application Patterns as the home for full product architectures. The first preserved architecture is the Academy pattern, including lesson pages, review lessons, navigation, progress reporting, library topics, domain cards, accessibility requirements, and design rationale.
