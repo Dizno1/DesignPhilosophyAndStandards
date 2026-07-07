@@ -1,0 +1,40 @@
+.odd-skip-link {
+  background: var(--odd-color-focus);
+  color: var(--odd-color-text);
+  font-weight: 700;
+  left: 1rem;
+  padding: 0.75rem 1rem;
+  position: absolute;
+  top: 0;
+  transform: translateY(-120%);
+  z-index: 1000;
+}
+
+.odd-skip-link:focus,
+.odd-skip-link:focus-visible {
+  transform: translateY(0);
+}
+
+.odd-sr-only {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.odd-full-width {
+  width: 100%;
+}
+
+.odd-text-secondary {
+  color: var(--odd-color-text-secondary);
+}
+
+.odd-no-list-style {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}

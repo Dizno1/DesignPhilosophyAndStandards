@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Screen Reader Experience Carousel ODD</title>
+  <link rel="stylesheet" href="../../Components/Carousel/carousel.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <div id="global-status" class="visually-hidden" aria-live="polite" aria-atomic="true"></div>
+  <header>
+    <h1>Screen Reader Experience Carousel ODD</h1>
+    <p class="lede">This version tests three separate carousel regions, queued named live announcements, focusable slide summaries, persistent motion preference, and a Dino philosophy carousel that connects the interaction pattern to real Open Door Design values.</p>
+  </header>
+  <main id="main">
+    <section class="between-content" aria-labelledby="before-heading">
+      <h2 id="before-heading">Before the first carousel</h2>
+      <p>This text is intentionally placed before the first carousel. When keyboard focus moves into the first carousel, that carousel should pause. When focus leaves it, motion should resume unless motion has been manually paused.</p>
+    </section>
+
+    <section class="carousel-shell" aria-labelledby="carousel-one-title">
+      <div id="carousel-one" class="carousel-region" role="region" aria-roledescription="carousel" aria-labelledby="carousel-one-title" tabindex="0" data-carousel data-carousel-name="Multimedia carousel" data-index="0">
+        <h2 id="carousel-one-title">Multimedia carousel</h2>
+        <p class="carousel-instructions">This first carousel contains images, videos, buttons, links, and a form. It should pause while the user is inside this carousel region and resume after the user leaves this region, unless Pause motion has been activated. This version does not use viewport or reading-area detection.</p>
+        <p class="status-line" data-status>Automatic slide rotation is active.</p>
+        <div class="visually-hidden" data-live aria-live="polite" aria-atomic="true"></div>
+        <div class="slides">
+          <article class="slide active two-column" data-slide="1" aria-labelledby="c1-slide-1-heading" aria-describedby="c1-slide-1-desc" tabindex="-1">
+            <div>
+              <div class="slide-summary" tabindex="0" role="group" aria-labelledby="c1-slide-1-heading" aria-describedby="c1-slide-1-desc" data-slide-summary>
+                <p class="slide-count">Slide 1 of 5</p>
+                <h2 id="c1-slide-1-heading" tabindex="-1">Welcome to the Open Door Accessibility Lab</h2>
+                <p id="c1-slide-1-desc">This slide introduces the multimedia carousel test. Use Previous and Next to move between slides.</p>
+              </div>
+              <div class="button-row"><button type="button" data-go-to="2">Begin exploring</button></div>
+            </div>
+            <div class="media-frame"><img src="assets/02_dino_carousel_welcome.png" alt="Dino stands in an open doorway, inviting visitors to begin their journey."></div>
+          </article>
+          <article class="slide two-column" data-slide="2" aria-labelledby="c1-slide-2-heading" aria-describedby="c1-slide-2-desc" tabindex="-1" hidden>
+            <div>
+              <div class="slide-summary" tabindex="0" role="group" aria-labelledby="c1-slide-2-heading" aria-describedby="c1-slide-2-desc c1-slide-2-video-desc" data-slide-summary>
+                <p class="slide-count">Slide 2 of 5</p>
+                <h2 id="c1-slide-2-heading" tabindex="-1">Technology Connects Us</h2>
+                <p id="c1-slide-2-desc">This short clip works well for a slide about mobile access, digital communication, and inclusive design.</p>
+                <p id="c1-slide-2-video-desc"><strong>Video description:</strong> A close-up view shows a person holding a smartphone and typing with both thumbs.</p>
+              </div>
+            </div>
+            <div class="media-frame"><video preload="metadata" poster="assets/mixkit-hands-of-a-person-typing-on-a-cell-phone-4915-hd-ready.jpg" aria-label="Video: hands typing on a smartphone" aria-describedby="c1-slide-2-desc" tabindex="-1"><source src="assets/mixkit-hands-of-a-person-typing-on-a-cell-phone-4915-hd-ready.mp4" type="video/mp4">Your browser does not support the video element.</video><div class="button-row"><button type="button" data-video-toggle>Play video</button></div></div>
+          </article>
+          <article class="slide two-column" data-slide="3" aria-labelledby="c1-slide-3-heading" aria-describedby="c1-slide-3-desc" tabindex="-1" hidden>
+            <div>
+              <div class="slide-summary" tabindex="0" role="group" aria-labelledby="c1-slide-3-heading" aria-describedby="c1-slide-3-desc c1-slide-3-video-desc" data-slide-summary>
+                <p class="slide-count">Slide 3 of 5</p>
+                <h2 id="c1-slide-3-heading" tabindex="-1">Innovation Supports Independence</h2>
+                <p id="c1-slide-3-desc">This clip shows how technology and independent work can belong in the same story.</p>
+                <p id="c1-slide-3-video-desc"><strong>Video description:</strong> A person with a prosthetic leg sits on a park bench using a laptop, with trees and flowers in the background.</p>
+              </div>
+            </div>
+            <div class="media-frame"><video preload="metadata" poster="assets/8435372-uhd_4096_2160_25fps.jpg" aria-label="Video: person with a prosthetic leg using a laptop" aria-describedby="c1-slide-3-desc" tabindex="-1"><source src="assets/8435372-uhd_4096_2160_25fps.mp4" type="video/mp4">Your browser does not support the video element.</video><div class="button-row"><button type="button" data-video-toggle>Play video</button></div></div>
+          </article>
+          <article class="slide" data-slide="4" aria-labelledby="c1-slide-4-heading" aria-describedby="c1-slide-4-desc" tabindex="-1" hidden>
+            <div class="slide-summary" tabindex="0" role="group" aria-labelledby="c1-slide-4-heading" aria-describedby="c1-slide-4-desc" data-slide-summary>
+              <p class="slide-count">Slide 4 of 5</p>
+              <h2 id="c1-slide-4-heading" tabindex="-1">Stay Connected</h2>
+              <p id="c1-slide-4-desc">This slide demonstrates form controls inside the carousel. Motion remains paused while the user works in the form.</p>
+            </div>
+            <form data-demo-form novalidate>
+              <div class="error-summary" tabindex="-1" data-form-errors hidden></div>
+              <div><label for="name-one">Name</label><input id="name-one" name="name" autocomplete="name" required aria-describedby="name-one-error"><p id="name-one-error" class="error-message" data-error-for="name" hidden></p></div>
+              <div><label for="email-one">Email address</label><input id="email-one" name="email" type="email" autocomplete="email" required aria-describedby="email-one-error"><p id="email-one-error" class="error-message" data-error-for="email" hidden></p></div>
+              <div><label for="interest-one">What accessibility topic interests you?</label><textarea id="interest-one" name="interest" rows="4" required aria-describedby="interest-one-error"></textarea><p id="interest-one-error" class="error-message" data-error-for="interest" hidden></p></div>
+              <button type="submit">Subscribe to updates</button>
+            </form>
+          </article>
+          <article class="slide" data-slide="5" aria-labelledby="c1-slide-5-heading" aria-describedby="c1-slide-5-desc" tabindex="-1" hidden>
+            <div class="slide-summary" tabindex="0" role="group" aria-labelledby="c1-slide-5-heading" aria-describedby="c1-slide-5-desc" data-slide-summary>
+              <p class="slide-count">Slide 5 of 5</p>
+              <h2 id="c1-slide-5-heading" tabindex="-1">Accessibility Resources</h2>
+              <p id="c1-slide-5-desc">This slide demonstrates multiple links inside a carousel slide.</p>
+            </div>
+            <ul class="resource-list"><li><a href="#">Read the accessibility statement</a></li><li><a href="#">Explore the Accessibility Lab</a></li><li><a href="#">Review featured projects</a></li></ul>
+          </article>
+        </div>
+        <div class="carousel-controls" aria-label="Carousel controls"><button type="button" class="secondary-button" data-prev>Previous slide</button><button type="button" data-pause>Pause motion</button><button type="button" class="secondary-button" data-next>Next slide</button><p data-position aria-live="off">Slide 1 of 5</p></div>
+      </div>
+    </section>
+
+    <section class="between-content" aria-labelledby="between-heading">
+      <h2 id="between-heading">Content between carousel regions</h2>
+      <p>This section exists so you can test leaving the first carousel region. When the virtual cursor or keyboard focus reaches this heading or paragraph, the first carousel should no longer be treated as the active carousel region.</p>
+      <p>Continue to the next heading to enter a second carousel region. Each carousel manages its own automatic motion independently unless the site-wide Pause motion preference is enabled.</p>
+    </section>
+
+    <section class="carousel-shell" aria-labelledby="carousel-two-title">
+      <div id="carousel-two" class="carousel-region" role="region" aria-roledescription="carousel" aria-labelledby="carousel-two-title" tabindex="0" data-carousel data-carousel-name="Initiatives carousel" data-index="1">
+        <h2 id="carousel-two-title">Initiatives carousel</h2>
+        <p class="carousel-instructions">This second carousel is a simple homepage-style initiatives carousel. It uses the same motion rules as the first carousel, but with lighter content.</p>
+        <p class="status-line" data-status>Automatic slide rotation is active.</p>
+        <div class="visually-hidden" data-live aria-live="polite" aria-atomic="true"></div>
+        <div class="slides">
+          <article class="slide active" data-slide="1" aria-labelledby="c2-slide-1-heading" aria-describedby="c2-slide-1-desc" tabindex="-1">
+            <div class="slide-summary" tabindex="0" role="group" aria-labelledby="c2-slide-1-heading" aria-describedby="c2-slide-1-desc" data-slide-summary>
+              <p class="slide-count">Slide 1 of 4</p>
+              <h2 id="c2-slide-1-heading" tabindex="-1">SR Document Remediation Tool</h2>
+              <p id="c2-slide-1-desc">A project exploring screen-reader-first workflows for PDF and document remediation.</p>
+            </div>
+            <a class="button-link" href="#">Explore the project</a>
+          </article>
+          <article class="slide" data-slide="2" aria-labelledby="c2-slide-2-heading" aria-describedby="c2-slide-2-desc" tabindex="-1" hidden>
+            <div class="slide-summary" tabindex="0" role="group" aria-labelledby="c2-slide-2-heading" aria-describedby="c2-slide-2-desc" data-slide-summary>
+              <p class="slide-count">Slide 2 of 4</p>
+              <h2 id="c2-slide-2-heading" tabindex="-1">Accessible Video Suite</h2>
+              <p id="c2-slide-2-desc">Accessible media playback, captions, transcripts, descriptions, and predictable controls.</p>
+            </div>
+            <a class="button-link" href="#">Explore the project</a>
+          </article>
+          <article class="slide" data-slide="3" aria-labelledby="c2-slide-3-heading" aria-describedby="c2-slide-3-desc" tabindex="-1" hidden>
+            <div class="slide-summary" tabindex="0" role="group" aria-labelledby="c2-slide-3-heading" aria-describedby="c2-slide-3-desc" data-slide-summary>
+              <p class="slide-count">Slide 3 of 4</p>
+              <h2 id="c2-slide-3-heading" tabindex="-1">CPACC Accessibility Academy</h2>
+              <p id="c2-slide-3-desc">A learning experience built to support accessibility study through practice and reinforcement.</p>
+            </div>
+            <a class="button-link" href="#">Explore the academy</a>
+          </article>
+          <article class="slide" data-slide="4" aria-labelledby="c2-slide-4-heading" aria-describedby="c2-slide-4-desc" tabindex="-1" hidden>
+            <div class="slide-summary" tabindex="0" role="group" aria-labelledby="c2-slide-4-heading" aria-describedby="c2-slide-4-desc" data-slide-summary>
+              <p class="slide-count">Slide 4 of 4</p>
+              <h2 id="c2-slide-4-heading" tabindex="-1">Join the Journey</h2>
+              <p id="c2-slide-4-desc">Collaboration, innovation, and community begin with an open door.</p>
+            </div>
+            <a class="button-link" href="#">Get involved</a>
+          </article>
+        </div>
+        <div class="carousel-controls" aria-label="Carousel controls"><button type="button" class="secondary-button" data-prev>Previous slide</button><button type="button" data-pause>Pause motion</button><button type="button" class="secondary-button" data-next>Next slide</button><p data-position aria-live="off">Slide 1 of 4</p></div>
+      </div>
+    </section>
+
+
+    <section class="between-content" aria-labelledby="third-intro-heading">
+      <h2 id="third-intro-heading">Content before the Dino philosophy carousel</h2>
+      <p>This section separates the second and third carousel regions. The third carousel introduces Dino as a guide to Open Door Design values while also demonstrating that three independent carousels can operate on the same page.</p>
+    </section>
+
+    <section class="carousel-shell" aria-labelledby="carousel-three-title">
+      <div id="carousel-three" class="carousel-region" role="region" aria-roledescription="carousel" aria-labelledby="carousel-three-title" tabindex="0" data-carousel data-carousel-name="Dino philosophy carousel" data-index="2">
+        <h2 id="carousel-three-title">Dino philosophy carousel</h2>
+        <p class="carousel-instructions">This third carousel introduces Dino through Open Door Design values. It is also a demonstration of how multiple independent carousels can pause and resume without interfering with each other.</p>
+        <p class="status-line" data-status>Automatic slide rotation is active.</p>
+        <div class="visually-hidden" data-live aria-live="polite" aria-atomic="true"></div>
+        <div class="slides">
+          <article class="slide active" data-slide="1" aria-labelledby="c3-slide-1-heading" aria-describedby="c3-slide-1-desc c3-slide-1-identity c3-slide-1-alt" tabindex="-1">
+            <div class="slide-summary" tabindex="0" role="group" aria-labelledby="c3-slide-1-heading" aria-describedby="c3-slide-1-desc c3-slide-1-identity c3-slide-1-alt" data-slide-summary>
+              <p class="slide-count">Slide 1 of 7</p>
+              <h2 id="c3-slide-1-heading" tabindex="-1">Accessibility Starts with a Welcome</h2>
+              <p id="c3-slide-1-desc">Accessibility begins when people are invited in rather than left out.</p>
+              <p id="c3-slide-1-identity"><strong>Dino the Welcomer:</strong> Open, friendly, and ready to invite people in.</p>
+              <p id="c3-slide-1-alt"><strong>Image description:</strong> Dino stands in an open doorway holding a book titled Accessibility Opens Doors while welcoming visitors inside.</p>
+            </div>
+            <div class="dino-card" aria-hidden="true"><div class="dino-avatar">🚪</div><div><strong>Dino the Welcomer</strong><p>Open, friendly, and ready to invite people in.</p></div></div>
+          </article>
+          <article class="slide" data-slide="2" aria-labelledby="c3-slide-2-heading" aria-describedby="c3-slide-2-desc c3-slide-2-identity c3-slide-2-alt" tabindex="-1" hidden>
+            <div class="slide-summary" tabindex="0" role="group" aria-labelledby="c3-slide-2-heading" aria-describedby="c3-slide-2-desc c3-slide-2-identity c3-slide-2-alt" data-slide-summary>
+              <p class="slide-count">Slide 2 of 7</p>
+              <h2 id="c3-slide-2-heading" tabindex="-1">Testing with Real Users Matters</h2>
+              <p id="c3-slide-2-desc">Accessibility should be verified using real assistive technology and real user workflows.</p>
+              <p id="c3-slide-2-identity"><strong>Dino the Tester:</strong> Practical, careful, and grounded in real experience.</p>
+              <p id="c3-slide-2-alt"><strong>Image description:</strong> Dino sits at a desk using a laptop with an Open Door Design mug nearby.</p>
+            </div>
+            <div class="dino-card" aria-hidden="true"><div class="dino-avatar">💻</div><div><strong>Dino the Tester</strong><p>Practical, careful, and grounded in real experience.</p></div></div>
+          </article>
+          <article class="slide" data-slide="3" aria-labelledby="c3-slide-3-heading" aria-describedby="c3-slide-3-desc c3-slide-3-identity c3-slide-3-alt" tabindex="-1" hidden>
+            <div class="slide-summary" tabindex="0" role="group" aria-labelledby="c3-slide-3-heading" aria-describedby="c3-slide-3-desc c3-slide-3-identity c3-slide-3-alt" data-slide-summary>
+              <p class="slide-count">Slide 3 of 7</p>
+              <h2 id="c3-slide-3-heading" tabindex="-1">Education Creates Independence</h2>
+              <p id="c3-slide-3-desc">Learning accessibility creates confidence, opportunity, and independence.</p>
+              <p id="c3-slide-3-identity"><strong>Dino the Teacher:</strong> Clear, patient, and focused on useful learning.</p>
+              <p id="c3-slide-3-alt"><strong>Image description:</strong> Dino stands beside a presentation board describing how accessibility benefits everyone.</p>
+            </div>
+            <div class="dino-card" aria-hidden="true"><div class="dino-avatar">📚</div><div><strong>Dino the Teacher</strong><p>Clear, patient, and focused on useful learning.</p></div></div>
+          </article>
+          <article class="slide" data-slide="4" aria-labelledby="c3-slide-4-heading" aria-describedby="c3-slide-4-desc c3-slide-4-identity c3-slide-4-alt" tabindex="-1" hidden>
+            <div class="slide-summary" tabindex="0" role="group" aria-labelledby="c3-slide-4-heading" aria-describedby="c3-slide-4-desc c3-slide-4-identity c3-slide-4-alt" data-slide-summary>
+              <p class="slide-count">Slide 4 of 7</p>
+              <h2 id="c3-slide-4-heading" tabindex="-1">Accessibility Benefits Everyone</h2>
+              <p id="c3-slide-4-desc">Inclusive design improves experiences for people with diverse abilities and backgrounds.</p>
+              <p id="c3-slide-4-identity"><strong>Dino the Collaborator:</strong> Community-minded and centered on inclusion.</p>
+              <p id="c3-slide-4-alt"><strong>Image description:</strong> Dino stands with a diverse group of people holding a sign that reads Together We Build Inclusion.</p>
+            </div>
+            <div class="dino-card" aria-hidden="true"><div class="dino-avatar">🤝</div><div><strong>Dino the Collaborator</strong><p>Community-minded and centered on inclusion.</p></div></div>
+          </article>
+          <article class="slide" data-slide="5" aria-labelledby="c3-slide-5-heading" aria-describedby="c3-slide-5-desc c3-slide-5-identity c3-slide-5-alt" tabindex="-1" hidden>
+            <div class="slide-summary" tabindex="0" role="group" aria-labelledby="c3-slide-5-heading" aria-describedby="c3-slide-5-desc c3-slide-5-identity c3-slide-5-alt" data-slide-summary>
+              <p class="slide-count">Slide 5 of 7</p>
+              <h2 id="c3-slide-5-heading" tabindex="-1">Solve Problems, Not Checkboxes</h2>
+              <p id="c3-slide-5-desc">The goal is creating usable experiences rather than simply satisfying compliance requirements.</p>
+              <p id="c3-slide-5-identity"><strong>Dino the Problem Solver:</strong> Thoughtful, practical, and focused on real barriers.</p>
+              <p id="c3-slide-5-alt"><strong>Image description:</strong> Dino studies puzzle pieces labeled Accessible Design, Usability, and Inclusion while considering how they fit together.</p>
+            </div>
+            <div class="dino-card" aria-hidden="true"><div class="dino-avatar">🧩</div><div><strong>Dino the Problem Solver</strong><p>Thoughtful, practical, and focused on real barriers.</p></div></div>
+          </article>
+          <article class="slide" data-slide="6" aria-labelledby="c3-slide-6-heading" aria-describedby="c3-slide-6-desc c3-slide-6-identity c3-slide-6-alt" tabindex="-1" hidden>
+            <div class="slide-summary" tabindex="0" role="group" aria-labelledby="c3-slide-6-heading" aria-describedby="c3-slide-6-desc c3-slide-6-identity c3-slide-6-alt" data-slide-summary>
+              <p class="slide-count">Slide 6 of 7</p>
+              <h2 id="c3-slide-6-heading" tabindex="-1">Build on Strong Foundations</h2>
+              <p id="c3-slide-6-desc">Standards, testing, and best practices provide a foundation for accessibility work.</p>
+              <p id="c3-slide-6-identity"><strong>Dino the Resource Guide:</strong> Rooted in standards and practical knowledge.</p>
+              <p id="c3-slide-6-alt"><strong>Image description:</strong> Dino carries a stack of books labeled Guidelines, WCAG, Testing, and Best Practices.</p>
+            </div>
+            <div class="dino-card" aria-hidden="true"><div class="dino-avatar">📖</div><div><strong>Dino the Resource Guide</strong><p>Rooted in standards and practical knowledge.</p></div></div>
+          </article>
+          <article class="slide" data-slide="7" aria-labelledby="c3-slide-7-heading" aria-describedby="c3-slide-7-desc c3-slide-7-identity c3-slide-7-alt" tabindex="-1" hidden>
+            <div class="slide-summary" tabindex="0" role="group" aria-labelledby="c3-slide-7-heading" aria-describedby="c3-slide-7-desc c3-slide-7-identity c3-slide-7-alt" data-slide-summary>
+              <p class="slide-count">Slide 7 of 7</p>
+              <h2 id="c3-slide-7-heading" tabindex="-1">Keep the Door Open</h2>
+              <p id="c3-slide-7-desc">Accessibility is not a destination. It is an ongoing commitment to inclusion.</p>
+              <p id="c3-slide-7-identity"><strong>Dino the Encourager:</strong> Optimistic, inviting, and always pointing toward the next door.</p>
+              <p id="c3-slide-7-alt"><strong>Image description:</strong> Dino gives a thumbs up while holding a sign that reads Every Click Should Open A Door.</p>
+            </div>
+            <div class="dino-card" aria-hidden="true"><div class="dino-avatar">👍</div><div><strong>Dino the Encourager</strong><p>Optimistic, inviting, and always pointing toward the next door.</p></div></div>
+          </article>
+        </div>
+        <div class="carousel-controls" aria-label="Carousel controls"><button type="button" class="secondary-button" data-prev>Previous slide</button><button type="button" data-pause>Pause motion</button><button type="button" class="secondary-button" data-next>Next slide</button><p data-position aria-live="off">Slide 1 of 7</p></div>
+      </div>
+    </section>
+
+    <section class="feature-note" aria-labelledby="after-heading">
+      <h2 id="after-heading">After the third carousel</h2>
+      <p>This section exists to test leaving the third carousel region. Once the user reaches this section, no carousel should be treated as the active carousel region.</p>
+    </section>
+
+    <section class="feature-note" aria-labelledby="reference-heading">
+      <h2 id="reference-heading">What this reference implementation demonstrates</h2>
+      <p>This page demonstrates a Screen Reader First carousel pattern using multiple independent carousel regions, focusable slide summaries, predictable media controls, accessible form validation, named live-region announcements, and a persistent Pause motion preference.</p>
+      <ul>
+        <li>Keyboard focus entering a carousel pauses that carousel.</li>
+        <li>Keyboard focus leaving a carousel allows that carousel to resume unless motion has been manually paused.</li>
+        <li>Each carousel manages its own motion independently.</li>
+        <li>The Pause motion control is a site-wide preference and is remembered across visits.</li>
+        <li>Slide summaries provide context before controls for Virtual Cursor Off users.</li>
+      </ul>
+    </section>
+  </main>
+  <footer role="contentinfo">
+    <p>Footer region. Reaching this region should also count as leaving all carousel regions.</p>
+  </footer>
+
+<script src="../../Components/Carousel/carousel.js"></script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+.odd-container {
+  width: min(100% - 2rem, 72rem);
+  margin-inline: auto;
+}
+
+.odd-section {
+  margin-block: var(--odd-space-6);
+}
+
+.odd-grid {
+  display: grid;
+  gap: var(--odd-space-4);
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 18rem), 1fr));
+}
+
+.odd-stack > * + * {
+  margin-block-start: var(--odd-space-4);
+}
+
+.odd-site-header {
+  background: var(--odd-color-navy);
+  color: var(--odd-color-surface);
+  padding-block: var(--odd-space-4);
+}
+
+.odd-site-header a {
+  color: var(--odd-color-surface);
+}
+
+.odd-brand {
+  font-weight: 700;
+  margin: 0 0 var(--odd-space-3);
+}
+
+.odd-nav-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--odd-space-3);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: 24rem) {
+  .odd-container {
+    width: min(100% - 1rem, 72rem);
+  }
+
+  .odd-nav-list {
+    display: block;
+  }
+
+  .odd-nav-list li + li {
+    margin-block-start: var(--odd-space-2);
+  }
+}

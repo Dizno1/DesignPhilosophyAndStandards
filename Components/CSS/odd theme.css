@@ -1,0 +1,68 @@
+/* Open Door Design shared theme tokens */
+:root {
+  --odd-color-text: #111111;
+  --odd-color-text-muted: #333333;
+  --odd-color-background: #fafaf8;
+  --odd-color-surface: #ffffff;
+  --odd-color-border: #5a6670;
+  --odd-color-primary: #1f6b35;
+  --odd-color-primary-dark: #174f28;
+  --odd-color-secondary: #17324d;
+  --odd-color-link: #004f9e;
+  --odd-color-link-visited: #5b2a86;
+  --odd-color-focus: #c58a00;
+  --odd-color-error: #8f1d18;
+  --odd-color-warning: #8a5200;
+  --odd-color-success: #1f6b35;
+  --odd-radius: 0.75rem;
+  --odd-space-1: 0.25rem;
+  --odd-space-2: 0.5rem;
+  --odd-space-3: 0.75rem;
+  --odd-space-4: 1rem;
+  --odd-space-5: 1.5rem;
+  --odd-space-6: 2rem;
+  --odd-font-body: Arial, Helvetica, sans-serif;
+  --odd-line-height: 1.55;
+}
+
+html {
+  box-sizing: border-box;
+  overflow-wrap: break-word;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  color: var(--odd-color-text);
+  background: var(--odd-color-background);
+  font-family: var(--odd-font-body);
+  line-height: var(--odd-line-height);
+  font-size: 1rem;
+}
+
+a {
+  color: var(--odd-color-link);
+  text-decoration: underline;
+  text-underline-offset: 0.16em;
+}
+
+a:visited {
+  color: var(--odd-color-link-visited);
+}
+
+:focus-visible {
+  outline: 0.2rem solid var(--odd-color-focus);
+  outline-offset: 0.18rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}

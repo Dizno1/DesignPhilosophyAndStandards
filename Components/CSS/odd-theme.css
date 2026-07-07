@@ -1,0 +1,91 @@
+:root {
+  --odd-color-navy: #17324D;
+  --odd-color-green: #2E7D32;
+  --odd-color-green-dark: #236127;
+  --odd-color-background: #FAFAF8;
+  --odd-color-surface: #FFFFFF;
+  --odd-color-border: #D7D7D7;
+  --odd-color-text: #111111;
+  --odd-color-text-secondary: #3B3B3B;
+  --odd-color-focus: #C58A00;
+  --odd-color-link: #005A9C;
+  --odd-color-link-visited: #5E2A84;
+  --odd-color-error: #B3261E;
+  --odd-color-warning: #8A4F00;
+  --odd-color-info: #005A9C;
+  --odd-radius: 0.75rem;
+  --odd-space-1: 0.25rem;
+  --odd-space-2: 0.5rem;
+  --odd-space-3: 0.75rem;
+  --odd-space-4: 1rem;
+  --odd-space-5: 1.5rem;
+  --odd-space-6: 2rem;
+  --odd-measure: 72ch;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  background: var(--odd-color-background);
+  color: var(--odd-color-text);
+  font-family: Arial, "Segoe UI", Helvetica, sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+img, svg, video {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: var(--odd-color-link);
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+
+a:visited {
+  color: var(--odd-color-link-visited);
+}
+
+:focus-visible {
+  outline: 3px solid var(--odd-color-focus);
+  outline-offset: 2px;
+}
+
+h1, h2, h3, h4 {
+  color: var(--odd-color-navy);
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: clamp(1.75rem, 5vw, 2.5rem);
+}
+
+h2 {
+  font-size: clamp(1.4rem, 4vw, 2rem);
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+p, li {
+  max-width: var(--odd-measure);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}

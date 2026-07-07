@@ -1,0 +1,56 @@
+:root {
+      --bg: #f7f4ef;
+      --panel: #ffffff;
+      --ink: #1d1b16;
+      --muted: #5b554b;
+      --accent: #6b3f1d;
+      --accent-dark: #3f2411;
+      --focus: #005fcc;
+      --soft: #e8dfd2;
+      --shadow: 0 10px 30px rgba(0,0,0,.15);
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: Arial, Helvetica, sans-serif; line-height: 1.55; color: var(--ink); background: var(--bg); }
+    a { color: #064f9e; }
+    a:focus, button:focus, input:focus, textarea:focus, [tabindex]:focus { outline: 4px solid var(--focus); outline-offset: 3px; }
+    .skip-link { position: absolute; left: 1rem; top: -10rem; z-index: 999; padding: .75rem 1rem; background: #fff; border: 2px solid #000; }
+    .skip-link:focus { top: 1rem; }
+    header, main, footer { max-width: 1180px; margin: 0 auto; padding: 1.25rem; }
+    header { padding-top: 2rem; }
+    h1 { font-size: clamp(2rem, 4vw, 3.5rem); line-height: 1.1; margin: 0 0 .5rem; }
+    .lede { max-width: 72ch; font-size: 1.15rem; color: var(--muted); }
+    .between-content, .feature-note { margin: 2rem 0; padding: 1rem; background: #fff; border: 2px solid var(--accent-dark); border-radius: .75rem; }
+    .carousel-shell { margin-top: 1.5rem; background: var(--panel); border: 3px solid var(--accent-dark); border-radius: 1rem; box-shadow: var(--shadow); overflow: hidden; }
+    .carousel-region { padding: 1rem; }
+    .carousel-instructions { margin: 0 0 1rem; padding: 1rem; background: var(--soft); border-left: 6px solid var(--accent); }
+    .status-line { font-weight: 700; margin: .5rem 0 1rem; }
+    .error-message { margin-top: .35rem; color: #8a1f11; font-weight: 700; }
+    .error-summary { padding: 1rem; border: 3px solid #8a1f11; background: #fff4f1; border-radius: .5rem; }
+    .slides { position: relative; }
+    .slide { display: none; min-height: 25rem; padding: 1.25rem; border-radius: .75rem; background: #fffaf2; }
+    .slide.active { display: grid; gap: 1rem; grid-template-columns: minmax(0, 1fr); }
+    .slide h2 { font-size: clamp(1.65rem, 3vw, 2.5rem); margin: 0; }
+    .slide-summary { display: block; padding: 1rem; border: 3px solid transparent; border-radius: .75rem; background: rgba(255,255,255,.65); }
+    .slide-summary:focus { outline: 4px solid var(--focus); outline-offset: 3px; border-color: var(--focus); }
+    .slide-summary > *:first-child { margin-top: 0; }
+    .slide-summary > *:last-child { margin-bottom: 0; }
+    .slide-count { font-weight: 700; color: var(--accent-dark); margin: 0; }
+    .media-frame { border: 2px solid #2b2118; border-radius: .75rem; overflow: hidden; background: #1f1a14; }
+    .media-frame img, .media-frame video { display: block; width: 100%; max-height: 30rem; object-fit: cover; background: #000; }
+    .button-row { display: flex; flex-wrap: wrap; gap: .75rem; margin-top: .5rem; }
+    button, .button-link { display: inline-block; border: 2px solid var(--accent-dark); border-radius: .6rem; padding: .75rem 1rem; background: var(--accent); color: #fff; font-weight: 700; cursor: pointer; text-decoration: none; font-size: 1rem; }
+    button:hover, .button-link:hover { background: var(--accent-dark); }
+    .secondary-button { background: #fff; color: var(--accent-dark); }
+    .secondary-button:hover { background: #f0e5d7; }
+    .carousel-controls { display: flex; flex-wrap: wrap; align-items: center; gap: .75rem; padding: 1rem; border-top: 3px solid var(--accent-dark); background: var(--soft); }
+    .carousel-controls p { margin: 0; font-weight: 700; }
+    form { display: grid; gap: .75rem; max-width: 35rem; }
+    label { font-weight: 700; }
+    input, textarea { width: 100%; padding: .75rem; border: 2px solid #5b554b; border-radius: .4rem; font: inherit; }
+    .resource-list { display: grid; gap: .75rem; padding-left: 1.25rem; }
+    .dino-card { display: flex; align-items: center; gap: 1rem; padding: 1rem; border: 2px solid var(--accent-dark); border-radius: .75rem; background: #fff; }
+    .dino-avatar { flex: 0 0 auto; width: 5rem; height: 5rem; border-radius: 50%; display: grid; place-items: center; font-size: 2.5rem; background: var(--soft); border: 2px solid var(--accent); }
+    .dino-card p { margin: .25rem 0 0; }
+    .visually-hidden { position: absolute !important; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
+    @media (min-width: 850px) { .slide.active.two-column { grid-template-columns: 1.1fr .9fr; align-items: center; } }
+    @media (prefers-reduced-motion: reduce) { * { scroll-behavior: auto !important; } }

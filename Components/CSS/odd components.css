@@ -1,0 +1,74 @@
+/* Open Door Design shared component styles */
+.odd-button,
+button,
+input[type="button"],
+input[type="submit"] {
+  min-height: 2.75rem;
+  padding: 0.75rem 1rem;
+  border: 0.125rem solid var(--odd-color-primary-dark);
+  border-radius: var(--odd-radius);
+  background: var(--odd-color-primary);
+  color: #ffffff;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.odd-button:hover,
+button:hover,
+input[type="button"]:hover,
+input[type="submit"]:hover {
+  background: var(--odd-color-primary-dark);
+}
+
+.odd-button-secondary {
+  background: var(--odd-color-surface);
+  color: var(--odd-color-secondary);
+  border-color: var(--odd-color-secondary);
+}
+
+.odd-card,
+.odd-panel {
+  background: var(--odd-color-surface);
+  border: 0.125rem solid var(--odd-color-border);
+  border-radius: var(--odd-radius);
+  padding: var(--odd-space-4);
+  margin-block: var(--odd-space-4);
+}
+
+.odd-status {
+  border: 0.125rem solid var(--odd-color-border);
+  border-radius: var(--odd-radius);
+  background: var(--odd-color-surface);
+  padding: var(--odd-space-4);
+}
+
+label {
+  display: block;
+  font-weight: 700;
+  margin-block-start: var(--odd-space-4);
+}
+
+input,
+select,
+textarea {
+  max-width: 100%;
+  font: inherit;
+}
+
+select,
+input:not([type]),
+input[type="text"],
+input[type="email"],
+input[type="search"],
+input[type="url"],
+input[type="password"],
+textarea {
+  width: 100%;
+  min-height: 2.75rem;
+  border: 0.125rem solid var(--odd-color-border);
+  border-radius: var(--odd-radius);
+  padding: 0.65rem;
+  background: var(--odd-color-surface);
+  color: var(--odd-color-text);
+}

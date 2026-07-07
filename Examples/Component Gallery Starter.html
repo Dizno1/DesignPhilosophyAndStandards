@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Component Gallery Starter</title>
+  <link rel="stylesheet" href="../Components/CSS/odd-theme.css">
+  <link rel="stylesheet" href="../Components/CSS/odd-layout.css">
+  <link rel="stylesheet" href="../Components/CSS/odd-components.css">
+  <link rel="stylesheet" href="../Components/CSS/odd-utilities.css">
+</head>
+<body>
+  <a class="odd-skip-link" href="#main">Skip to main content</a>
+  <header class="odd-site-header">
+    <div class="odd-container">
+      <p class="odd-brand">Open Door Design</p>
+      <nav aria-label="Primary">
+        <ul class="odd-nav-list">
+          <li><a href="#buttons">Buttons</a></li>
+          <li><a href="#forms">Forms</a></li>
+          <li><a href="#status">Status</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main id="main" class="odd-container">
+    <h1>Component Gallery Starter</h1>
+    <p>This starter page demonstrates how shared Open Door Design components should look and behave.</p>
+
+    <section id="buttons" class="odd-section">
+      <h2>Buttons</h2>
+      <button class="odd-button odd-button-primary" type="button">Primary action</button>
+      <button class="odd-button odd-button-secondary" type="button">Secondary action</button>
+      <button class="odd-button odd-button-danger" type="button">Delete item</button>
+    </section>
+
+    <section id="forms" class="odd-section">
+      <h2>Forms</h2>
+      <form class="odd-form">
+        <label for="project-name">Project name (required)</label>
+        <p id="project-name-help" class="odd-help-text">Use a clear name people will recognize later.</p>
+        <input id="project-name" name="project-name" required aria-describedby="project-name-help">
+        <button class="odd-button odd-button-primary" type="submit">Save project</button>
+      </form>
+    </section>
+
+    <section id="status" class="odd-section">
+      <h2>Status messages</h2>
+      <p class="odd-alert odd-alert-info" role="status">Settings saved. You can continue working.</p>
+      <p class="odd-alert odd-alert-error" role="alert">The project name is required. Enter a project name and try again.</p>
+    </section>
+  </main>
+</body>
+</html>
