@@ -119,7 +119,10 @@ Hex: `#2E7D32`
 ## Color use rules
 
 - Never rely on color alone.
-- Pair color with text, icons, or structure.
+- Pair color with text, icons, borders, labels, spacing, or structure.
+- Do not use blue and green together as the primary visual distinction between neighboring interface elements, navigation states, buttons, cards, banners, or important content areas.
+- Do not place blue links or blue state indicators directly within a green navigation or green branding system unless there is a clear non-color distinction and the combination has been reviewed for color vision accessibility.
+- Use one dominant color family within a single component or region. A banner, navigation bar, card group, or control cluster should not depend on a blue-to-green relationship.
 - Avoid low-contrast placeholder text.
 - Avoid colored text over images.
 - Do not use pale colored buttons with low-contrast text.

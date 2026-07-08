@@ -15,6 +15,9 @@ Rules:
 - Use high contrast text and controls.
 - Use color consistently across projects.
 - Never rely on color alone.
+- Do not use blue and green together as the primary visual distinction between neighboring interface elements, navigation states, buttons, cards, banners, or important content areas.
+- Passing a contrast checker is required, but it is not enough. Color choices must also be practical for users with common color vision differences.
+- Pair color with text, underline, border, icon shape, spacing, font weight, or label text when color communicates meaning or state.
 - Avoid low contrast placeholder text.
 - Avoid text on patterned or busy backgrounds.
 - Test color choices in normal mode, forced colors, and high zoom where practical.
