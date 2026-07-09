@@ -11,10 +11,15 @@ Open Door Design uses stronger contrast targets than the minimum WCAG AA thresho
 Targets:
 
 - Normal text: 7:1 or better whenever practical.
+- Preferred normal text: 10:1 or better when practical.
+- Primary navigation: 12:1 or better where practical.
 - Large text: 4.5:1 or better whenever practical.
 - Buttons, form controls, icons, borders, and focus indicators: 4.5:1 or better whenever practical.
+- Button and link text should exceed AAA whenever practical.
 - Text over images is avoided unless a solid or reliably contrasting overlay is used.
 - Color is never the only method used to communicate state, status, meaning, or required action.
+- A passing mathematical contrast ratio is required, but it does not automatically make a color choice acceptable.
+- Color combinations that are difficult for common color vision differences, especially blue/green pairings, must be avoided in interface components.
 
 ## Reflow and zoom
 

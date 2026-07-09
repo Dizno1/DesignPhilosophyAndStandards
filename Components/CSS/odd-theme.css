@@ -1,18 +1,18 @@
 :root {
   --odd-color-navy: #17324D;
-  --odd-color-green: #2E7D32;
-  --odd-color-green-dark: #236127;
+  --odd-color-green: #0B5D3B;
+  --odd-color-green-dark: #08452C;
   --odd-color-background: #FAFAF8;
   --odd-color-surface: #FFFFFF;
   --odd-color-border: #D7D7D7;
   --odd-color-text: #111111;
   --odd-color-text-secondary: #3B3B3B;
-  --odd-color-focus: #C58A00;
-  --odd-color-link: #1f6b35;
+  --odd-color-focus: #7A4F00;
+  --odd-color-link: #0B5D3B;
   --odd-color-link-visited: #5E2A84;
-  --odd-color-error: #B3261E;
-  --odd-color-warning: #8A4F00;
-  --odd-color-info: #005A9C;
+  --odd-color-error: #8F1D18;
+  --odd-color-warning: #7A4F00;
+  --odd-color-info: #17324D;
   --odd-radius: 0.75rem;
   --odd-space-1: 0.25rem;
   --odd-space-2: 0.5rem;

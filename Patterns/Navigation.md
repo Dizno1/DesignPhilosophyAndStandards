@@ -32,6 +32,19 @@ Use native links for navigation.
 
 Use buttons only for actions that change the current page state, such as opening a menu.
 
+## Navigation color standard
+
+Primary navigation must be treated as a structural system, not as ordinary body link styling.
+
+Rules:
+
+- Do not style primary navigation with blue links.
+- Do not allow primary navigation to inherit a global link color if that creates blue navigation inside a green brand system.
+- Use high-contrast dark neutral text for default navigation links unless a specific approved pattern is documented.
+- Use Open Door Green for current page treatment, hover treatment, or brand emphasis.
+- Current page treatment must not rely on color alone. Use `aria-current="page"` and a visible change such as background, border, underline, font weight, or shape.
+- Navigation focus indicators must remain highly visible against the default, hover, and current-page states.
+
 ## Current page
 
 Indicate the current page visually and programmatically.

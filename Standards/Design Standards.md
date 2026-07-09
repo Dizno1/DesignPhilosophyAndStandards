@@ -10,17 +10,25 @@ The design system should support users rather than decorate the interface at the
 
 Color must be accessible before it is expressive.
 
+Open Door Design uses a calm, high-contrast visual system built around dark neutral text, warm off-white surfaces, and one primary brand accent: rich forest green.
+
 Rules:
 
+- Use WCAG 2.2 AA as the baseline and target AAA wherever practical.
+- Prefer stronger-than-AAA contrast when it improves readability without making the design harsh.
 - Use high contrast text and controls.
 - Use color consistently across projects.
 - Never rely on color alone.
+- Use green as the primary brand accent.
+- Do not use blue as a primary interface color.
 - Do not use blue and green together as the primary visual distinction between neighboring interface elements, navigation states, buttons, cards, banners, or important content areas.
 - Passing a contrast checker is required, but it is not enough. Color choices must also be practical for users with common color vision differences.
 - Pair color with text, underline, border, icon shape, spacing, font weight, or label text when color communicates meaning or state.
+- Primary navigation must not inherit the global link color if doing so creates a blue/green visual system.
+- Current page styling must be visually clear and programmatically exposed, such as with `aria-current="page"`.
 - Avoid low contrast placeholder text.
 - Avoid text on patterned or busy backgrounds.
-- Test color choices in normal mode, forced colors, and high zoom where practical.
+- Test color choices in normal mode, forced colors, color vision review, and high zoom where practical.
 
 ## Typography
 
