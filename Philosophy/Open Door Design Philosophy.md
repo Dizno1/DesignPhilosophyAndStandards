@@ -64,3 +64,7 @@ Every feature should do at least one of these things:
 - Increase confidence.
 
 If a feature does none of those things, it should not be included.
+
+
+## Goal-Oriented Interaction
+Users describe the outcome they want. Applications determine the workflow and hide unnecessary technical complexity.
