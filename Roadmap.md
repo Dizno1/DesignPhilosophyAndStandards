@@ -143,3 +143,16 @@ Future work:
 Status: Complete
 
 Added the Academy as the first full application pattern. This phase preserves the course architecture, lesson structure, review lesson structure, lesson navigation, progress reporting, library topic behavior, domain card behavior, accessibility requirements, design rationale, and starter templates for future Academy-style courses.
+
+## Phase 3H - Website Synchronization
+
+Status: Complete, with flagged follow-up work
+
+Synchronized `Components/CSS`, `Components/Carousel`, and added `Components/Video Player` from the live, tested Open Door Design website rather than the older, drifted versions previously in this repository. Resolved a real duplicate-source-of-truth problem (two parallel CSS naming conventions in `Components/CSS`). Added `Standards/Phase-1-Design-System-Reference.md`, the numeric contrast/palette reference the design philosophy is built on.
+
+Not resolved by this phase, and not safe to treat as done:
+
+- `Examples/Component Gallery Starter.html`, `Patterns/Cards.md`, `Patterns/Navigation.md`, and `Patterns/Dialogs.md` still reference the old `.odd-*` prefixed class convention, which the newly-synchronized CSS doesn't define. These need either updating to the new convention or a deliberate decision to keep `.odd-*` as a documented secondary convention.
+- The carousel CSS documents controls as links (for JAWS Browse Mode); the actual live markup uses buttons. Which one is the intended standard going forward hasn't been decided.
+
+Next recommended phase: resolve those two items, then this repository is genuinely ready to be used as the design authority for other projects (e.g. VoiceOfOpenDoor).

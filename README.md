@@ -98,3 +98,17 @@ These patterns help future Open Door Design projects inherit proven navigation, 
 ## Recent update
 
 Added Application Patterns as the home for full product architectures. The first preserved architecture is the Academy pattern, including lesson pages, review lessons, navigation, progress reporting, library topics, domain cards, accessibility requirements, and design rationale.
+
+## Website Synchronization (July 29, 2026)
+
+The design system was significantly out of date compared to the actual, tested Open Door Design website - the website had material improvements (corrected skip-link behavior, stronger focus styling, AAA-oriented color tokens, full carousel implementation, an accessible video player component, forced-colors and print support) that had never been brought back into this repository. There was also a real duplicate-file problem: `Components/CSS` contained two parallel, independently-diverged sets of the same four files (a hyphenated-name set and a space-name set), creating two sources of truth.
+
+This update treats the live, tested website as the source of truth and synchronizes this repository from it:
+
+- `Components/CSS/*.css` replaced with the current website CSS. See `Components/CSS/README.md` for exactly what changed, and for an important, real breaking change: the website uses a different class-naming convention (bare elements like `button`/`.card` instead of prefixed `.odd-button`/`.odd-card` classes) than several existing pattern documents still reference. That's flagged as an explicit follow-up, not silently resolved.
+- `Components/Carousel/` replaced with the actual live carousel markup, CSS classes, and JavaScript (previously used yet a third, different naming convention). See `Components/Carousel/README.md`, including a real discrepancy found between a CSS comment and the actual live markup that wasn't guessed at, just documented.
+- `Components/Video Player/` added - a component that didn't exist here before.
+- `Standards/Phase-1-Design-System-Reference.md` added - the specific numeric contrast/palette reference from the website that `Standards/Design Standards.md`'s existing prose principles are built on.
+- Both previous CSS variants and the previous carousel component are preserved at `Archive/CSS-Pre-Website-Sync-2026-07-29/`, not deleted.
+
+This repository is not fully synchronized until the flagged follow-up items above (pattern docs still using the old `.odd-*` classes; the carousel button-vs-link discrepancy) are resolved.

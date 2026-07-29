@@ -1,0 +1,52 @@
+# Phase 1 Design System Reference (from the tested website)
+
+Brought in from the live OpenDoorDesign website repository (`docs/Open-Door-Design-Phase-1-Design-System.md`) on July 29, 2026, during the CSS synchronization documented in `Components/CSS/README.md`. This is the specific, numeric reference that the general principles in `Design Standards.md` are built on - `Design Standards.md` already states the blue/green guardrail and the contrast philosophy in prose; this document is the measured implementation behind it.
+
+---
+
+This folder establishes the first shared CSS foundation for Open Door Design projects.
+
+## Files
+
+- `css/odd-theme.css` defines design tokens, global colors, typography, links, focus indicators, motion preferences, and compatibility variables for older page styles.
+- `css/odd-layout.css` defines shared page structure, navigation, banners, grids, sections, footers, and reflow behavior.
+- `css/odd-components.css` defines buttons, forms, cards, callouts, status panels, carousel patterns, and accessible video player baseline styles.
+- `css/odd-utilities.css` defines screen-reader-only utilities, print handling, forced-colors support, and small helper classes.
+
+(These now live in this repository at `Components/CSS/` - see `Components/CSS/README.md` for the synchronization that brought them here.)
+
+## Open Door Design internal targets
+
+- Normal text should target at least 7:1 contrast whenever practical.
+- Large text should target at least 4.5:1 contrast.
+- User interface components, focus indicators, borders, icons, and control states should target at least 4.5:1 contrast.
+- Pages should reflow without horizontal scrolling at 320 CSS pixels and should remain usable below that width whenever practical.
+- Touch and pointer targets should prefer 48 CSS pixels and should not fall below 44 CSS pixels for core controls.
+- Links should remain underlined by default.
+- Focus indicators should be visible, high contrast, and consistent across all pages and applications.
+- Native HTML controls should be preferred before custom widgets.
+
+## Palette contrast checks
+
+The core palette was selected to exceed minimum contrast targets:
+
+- Body text `#111111` on background `#F7FBF8`: approximately 18:1.
+- Heading `#102A43` on background `#F7FBF8`: approximately 14:1.
+- Link `#004B8D` on background `#F7FBF8`: approximately 8.4:1.
+- Visited link `#5A2A82` on background `#F7FBF8`: approximately 9.6:1.
+- White text on primary green `#0B5D3B`: approximately 8:1.
+- White text on deep navy `#17324D`: approximately 13:1.
+
+## Color pairing guardrail
+
+Open Door Design does not use blue and green together as the primary visual distinction between neighboring interface elements, navigation states, buttons, cards, banners, or important content areas.
+
+Passing a contrast checker is required, but it is not enough. Color choices must also be practical for users with common color vision differences and for sighted users who experience visual strain from competing color families.
+
+When color communicates state, category, emphasis, or navigation, the design must also provide a non-color cue such as text, underline, border, icon shape, spacing, font weight, or label text.
+
+The primary navigation uses text color, font weight, background, border, and underline behavior instead of blue links placed near green branding. Site banners use one color family rather than a blue-to-green gradient.
+
+## Implementation status (as of the source document, website repository)
+
+All HTML and HTM pages on the website reference the shared CSS files. Inline page style blocks were removed so the site uses one shared visual foundation.
